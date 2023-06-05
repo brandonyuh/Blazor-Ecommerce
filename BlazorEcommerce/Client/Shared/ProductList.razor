@@ -1,4 +1,5 @@
-﻿<ul class="list-unstyled">
+﻿@inject HttpClient Http
+<ul class="list-unstyled">
 	@foreach (var product in Products)
 	{
 		<li class="media my-3">
@@ -14,35 +15,20 @@
 				<p>@product.Description</p>
 				<h5 class="price">@product.Price.ToString("C")</h5>
 			</div>
-			
+
 		</li>
 	}
 
 </ul>
 @code {
-	private static List<Product> Products = new List<Product>
+	private static List<Product> Products = new List<Product>();
+	protected override async Task OnInitializedAsync()
 	{
-		new Product {
-			Id = 1,
-			Title = "The Hitchhiker's Guide to the Galaxy",
-			Description = "The Hitchhiker's Guide to the Galaxy is a comedy science fiction franchise created by Douglas Adams.",
-			ImageUrl = "https://upload.wikimedia.org/wikipedia/en/b/bd/H2G2_UK_front_cover.jpg",
-			Price = 9.99M,
-		},
-		new Product {
-			Id = 2,
-			Title = "Ready Player One",
-			Description = "Ready Player One is a 2011 science fiction novel, and the debut novel of American author Ernest Cline.",
-			ImageUrl = "https://upload.wikimedia.org/wikipedia/en/a/a4/Ready_Player_One_cover.jpg",
-			Price = 7.99M,
-		},
-		new Product {
-			Id = 3,
-			Title = "Nineteen Eighty-Four",
-			Description = "Nineteen Eighty-Four (also published as 1984) is a dystopian social science fiction novel and cautionary tale by English writer George Orwell.",
-			ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/c/c3/1984first.jpg",
-			Price = 6.99M,
-		},
+		var result = await Http.GetFromJsonAsync<List<Product>>("api/Product");
+		if(result != null)
+		{
+			Products = result;
+		}
+	}
 
-	};
 }
