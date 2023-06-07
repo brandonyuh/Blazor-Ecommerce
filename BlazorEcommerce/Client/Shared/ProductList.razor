@@ -21,7 +21,9 @@ else
 						<h5 class="mt-0">@product.Title</h5>
 					</a>
 					<p>@product.Description</p>
-					<h5 class="price">@product.Price.ToString("C")</h5>
+					<h5 class="price">
+						@GetPriceText(product)
+					</h5>
 				</div>
 
 			</li>
@@ -37,5 +39,24 @@ else
 	public void Dispose()
 	{
 		ProductService.ProductsChanged -= StateHasChanged;
+	}
+
+	private string GetPriceText(Product product)
+	{
+		var variants = product.Variants;
+		if (variants.Count == 0)
+		{
+			return string.Empty;
+		}
+		else if(variants.Count == 1)
+		{
+			return variants[0].Price.ToString("C");
+		}
+		else
+		{
+			var minPrice = variants.Min(v => v.Price);
+			var maxPrice = variants.Max(v => v.Price);
+			return $"{minPrice.ToString("C")} - {maxPrice.ToString("C")}";
+		}
 	}
 }

@@ -20,13 +20,15 @@
 
 		public async Task GetProducts(string? categoryUrl = null)
 		{
-			var result = categoryUrl == null ? await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/product"):
+			var result = categoryUrl == null ? await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/product") :
 				await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/product/category/{categoryUrl}");
-				;
-			if(result != null && result.Success)
+			;
+			if (result != null && result.Success)
 				Products = result.Data;
-
-			ProductsChanged.Invoke();
+			if (ProductsChanged != null)
+			{ 
+				ProductsChanged.Invoke();
+			}
 
 		}
 	}
