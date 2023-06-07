@@ -3,7 +3,7 @@
 
 @if (ProductService.Products == null || ProductService.Products.Count == 0)
 {
-	<span> Loading Products...</span>
+	<span>@ProductService.Message</span>
 }
 else
 {
@@ -48,7 +48,7 @@ else
 		{
 			return string.Empty;
 		}
-		else if(variants.Count == 1)
+		else if (variants.Count == 1)
 		{
 			return variants[0].Price.ToString("C");
 		}
