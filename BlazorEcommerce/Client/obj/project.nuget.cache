@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vUYeO1CczB/BOXS/kfbGOJo2rUgkC6lcTd0Z7LD/FKtOqDL6+ftfe0fmpdQBVwa16DxeNXnXcX+rnXh0FJtBwA==",
+  "dgSpecHash": "cLA8omvMH3LxON4BSl8FmlTQxN7dhKV1aKe27wJKOQ5CjxyZQT2ZH/qA05QInxnh98qaq0NO/yM9aV5Eqn0C3g==",
   "success": true,
   "projectFilePath": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\Client\\BlazorEcommerce.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\brand\\.nuget\\packages\\blazored.localstorage\\4.3.0\\blazored.localstorage.4.3.0.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.5\\microsoft.aspnetcore.components.analyzers.7.0.5.nupkg.sha512",
