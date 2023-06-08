@@ -19,7 +19,8 @@ else
 				</div>
 				<div class="name">
 					<h5><a href="/product/@product.ProductId">@product.Title</a></h5>
-					<span>@product.ProductType</span>
+					<span>@product.ProductType</span> <br/>
+					<button class="btn-delete" @onclick="@(()=>RemoveProductFromCart(product.ProductId, product.ProductTypeId))">Delete</button>
 				</div>
 				<div class="cart-product-price">
 					$@product.Price
@@ -38,6 +39,17 @@ else
 
 	protected override async Task OnInitializedAsync()
 	{
+		await LoadCart();
+	}
+
+	private async Task RemoveProductFromCart(int productId, int productTypeId)
+	{
+		await CartService.RemoveProductFromCart(productId, productTypeId);
+		await LoadCart();
+	}
+
+	private async Task LoadCart()
+	{
 		if ((await CartService.GetCartItems()).Count == 0)
 		{
 			message = "Cart is empty";
@@ -48,5 +60,4 @@ else
 			cartProducts = await CartService.GetCartProducts();
 		}
 	}
-
 }
