@@ -31,6 +31,7 @@ namespace BlazorEcommerce.Server.Services.AuthService
 			return new ServiceResponse<int>
 			{
 				Data = user.Id,
+				Message = "Registration Successful!",
 			};
 
 		}
