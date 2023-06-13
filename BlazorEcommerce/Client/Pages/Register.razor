@@ -34,7 +34,6 @@
 
 	async void HandleRegistration()
 	{
-		Console.WriteLine("HandleRegistration");
 		var result = await AuthService.Register(user);
 		message = result.Message;
 		if (result.Success)
