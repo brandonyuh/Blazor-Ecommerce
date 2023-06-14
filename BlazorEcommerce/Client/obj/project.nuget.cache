@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6IE2omtmE5Lf52ti6fksjrpgtmS6LMmb+QcaCorHbduRYXraIn+cMPoixAobuJBNIkk/Gk/wwo3VadNpQ5WdGg==",
+  "dgSpecHash": "IOAjSp6A6DAj5/J1UakbStQU74RoBJD7KXafBJ0isjT6/20bptF+n0eXOU1UzYhqeCNu9vvnd2ieTLhLay4jIg==",
   "success": true,
   "projectFilePath": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\Client\\BlazorEcommerce.Client.csproj",
   "expectedPackageFiles": [
@@ -36,7 +36,7 @@
     "C:\\Users\\brand\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\brand\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.5.nupkg.sha512"
+    "C:\\Users\\brand\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.7\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.7.nupkg.sha512"
   ],
   "logs": []
 }
