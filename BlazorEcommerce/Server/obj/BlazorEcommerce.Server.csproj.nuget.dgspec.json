@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\Server\\BlazorEcommerce.Server.csproj": {}
+    "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\server\\BlazorEcommerce.Server.csproj": {}
   },
   "projects": {
     "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\Client\\BlazorEcommerce.Client.csproj": {
@@ -101,14 +101,14 @@
         }
       }
     },
-    "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\Server\\BlazorEcommerce.Server.csproj": {
+    "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\server\\BlazorEcommerce.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\Server\\BlazorEcommerce.Server.csproj",
+        "projectUniqueName": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\server\\BlazorEcommerce.Server.csproj",
         "projectName": "BlazorEcommerce.Server",
-        "projectPath": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\Server\\BlazorEcommerce.Server.csproj",
+        "projectPath": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\server\\BlazorEcommerce.Server.csproj",
         "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\Server\\obj\\",
+        "outputPath": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

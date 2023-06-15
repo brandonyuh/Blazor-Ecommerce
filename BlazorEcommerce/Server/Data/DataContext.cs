@@ -11,7 +11,9 @@
 		{
 			modelBuilder.Entity<CartItem>().HasKey(ci => new { ci.UserId, ci.ProductId, ci.ProductTypeId });
 			modelBuilder.Entity<ProductVariant>().HasKey(pv => new { pv.ProductId, pv.ProductTypeId });
-			modelBuilder.Entity<ProductType>().HasData(
+            modelBuilder.Entity<OrderItem>().HasKey(oi => new { oi.OrderId, oi.ProductId, oi.ProductTypeId });
+
+            modelBuilder.Entity<ProductType>().HasData(
 					new ProductType { Id = 1, Name = "Default" },
 					new ProductType { Id = 2, Name = "Paperback" },
 					new ProductType { Id = 3, Name = "E-Book" },
@@ -260,5 +262,7 @@
 		public DbSet<ProductVariant> ProductVariants { get; set; }
 		public DbSet<User> Users { get; set; }
 		public DbSet<CartItem> CartItems { get; set; }
+		public DbSet<Order> Orders { get; set; }
+		public DbSet<OrderItem> OrderItems { get; set;}
 	}
 }
