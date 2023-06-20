@@ -10,16 +10,16 @@ namespace BlazorEcommerce.Server.Services.AuthService
 	{
 		private readonly DataContext _context;
 		private readonly IConfiguration _configuration;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+		private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public AuthService(DataContext context, IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
+		public AuthService(DataContext context, IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
 		{
 			_context = context;
 			_configuration = configuration;
-            _httpContextAccessor = httpContextAccessor;
-        }
+			_httpContextAccessor = httpContextAccessor;
+		}
 
-        public int GetUserId() => int.Parse(_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
+		public int GetUserId() => int.Parse(_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
 		public string GetUserEmail() => _httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.Name);
 
 
@@ -102,7 +102,8 @@ namespace BlazorEcommerce.Server.Services.AuthService
 			List<Claim> claims = new List<Claim>
 			{
 				new Claim (ClaimTypes.NameIdentifier, user.Id.ToString()),
-				new Claim (ClaimTypes.Name, user.Email)
+				new Claim (ClaimTypes.Name, user.Email),
+				new Claim (ClaimTypes.Role, user.Role)
 			};
 
 			var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration.GetSection("AppSettings:Token").Value));
@@ -122,7 +123,7 @@ namespace BlazorEcommerce.Server.Services.AuthService
 		public async Task<ServiceResponse<bool>> ChangePassword(int userId, string newPassword)
 		{
 			var user = await _context.Users.FindAsync(userId);
-			if (user == null) 
+			if (user == null)
 			{
 				return new ServiceResponse<bool>
 				{
