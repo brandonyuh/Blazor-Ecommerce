@@ -20,8 +20,10 @@ namespace BlazorEcommerce.Server.Services.AuthService
         }
 
         public int GetUserId() => int.Parse(_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
+		public string GetUserEmail() => _httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.Name);
 
-        public async Task<ServiceResponse<string>> Login(string email, string password)
+
+		public async Task<ServiceResponse<string>> Login(string email, string password)
 		{
 			var response = new ServiceResponse<string>();
 			var user = await _context.Users.FirstOrDefaultAsync(user => user.Email.ToLower().Equals(email.ToLower()));
@@ -139,6 +141,11 @@ namespace BlazorEcommerce.Server.Services.AuthService
 				Data = true,
 				Message = "Password updated successfully."
 			};
+		}
+
+		public async Task<User> GetUserByEmail(string email)
+		{
+			return await _context.Users.FirstOrDefaultAsync(user => user.Email.ToLower().Equals(email.ToLower()));
 		}
 	}
 }

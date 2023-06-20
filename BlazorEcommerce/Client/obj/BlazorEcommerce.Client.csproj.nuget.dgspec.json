@@ -68,6 +68,10 @@
             "Microsoft.AspNetCore.WebUtilities": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[41.20.0, )"
             }
           },
           "imports": [
