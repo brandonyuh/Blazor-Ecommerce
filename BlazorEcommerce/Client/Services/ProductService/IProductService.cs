@@ -17,6 +17,9 @@ namespace BlazorEcommerce.Client.Services.ProductService
 		public Task SearchProducts(string searchText, int page);
 		public Task<List<string>> GetProductSearchSuggestions(string searchText);
 		Task GetAdminProducts();
+		Task<Product> CreateProduct(Product product);
+		Task<Product> UpdateProduct(Product product);
+		Task DeleteProduct(Product product);
 
 	}
 }
