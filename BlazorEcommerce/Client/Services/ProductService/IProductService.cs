@@ -5,6 +5,7 @@ namespace BlazorEcommerce.Client.Services.ProductService
 	{
 		event Action ProductsChanged;
 		public List<Product> Products { get; set; }
+		public List<Product> AdminProducts { get; set; }
 		string Message { get; set; }
 		int CurrentPage { get; set; }
 		int PageCount { get; set; }
@@ -15,6 +16,7 @@ namespace BlazorEcommerce.Client.Services.ProductService
 
 		public Task SearchProducts(string searchText, int page);
 		public Task<List<string>> GetProductSearchSuggestions(string searchText);
+		Task GetAdminProducts();
 
 	}
 }
