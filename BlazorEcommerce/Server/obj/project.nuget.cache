@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UA6TVpIXE0PJv/pQNELQKGPcbBzYP5vQxDu0NNf4ypj7COXoygaVyMmkfr1URMlaSetgCYdlCBSP9Gbb0R1WSw==",
+  "dgSpecHash": "SfbmONl9eRt9BrJun0853fPGipSHzUDlvw3vFTmh5bjzQraJRwvSReLyBdCUEfVovsdcy/KywXltjpAMqE3D9w==",
   "success": true,
-  "projectFilePath": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\server\\BlazorEcommerce.Server.csproj",
+  "projectFilePath": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\Server\\BlazorEcommerce.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brand\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
