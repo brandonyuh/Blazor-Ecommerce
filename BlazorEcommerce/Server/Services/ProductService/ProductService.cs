@@ -5,9 +5,12 @@ namespace BlazorEcommerce.Server.Services.ProductService
 	public class ProductService : IProductService
 	{
 		private readonly DataContext _context;
-		public ProductService(DataContext context)
+		private readonly IHttpContextAccessor _httpContextAccessor;
+
+		public ProductService(DataContext context, IHttpContextAccessor httpContextAccessor)
 		{
 			_context = context;
+			_httpContextAccessor = httpContextAccessor;
 		}
 
 		public async Task<ServiceResponse<List<string>>> GetProductSearchSuggestions(string searchText)
@@ -44,10 +47,22 @@ namespace BlazorEcommerce.Server.Services.ProductService
 		public async Task<ServiceResponse<Product>> GetProductAsync(int productId)
 		{
 			var response = new ServiceResponse<Product>();
-			var product = await _context.Products
+			Product product = null;
+			if (_httpContextAccessor.HttpContext.User.IsInRole("Admin"))
+			{
+				product = await _context.Products
+				.Include(p => p.Variants.Where(v => !v.Deleted))
+				.ThenInclude(v => v.ProductType)
+				.FirstOrDefaultAsync(p => p.Id == productId && !p.Deleted);
+			}
+			else
+			{
+				product = await _context.Products
 				.Include(p => p.Variants.Where(v => v.Visible && !v.Deleted))
 				.ThenInclude(v => v.ProductType)
 				.FirstOrDefaultAsync(p => p.Id == productId && !p.Deleted && p.Visible);
+			}
+			
 			if (product == null)
 			{
 				response.Success = false;
