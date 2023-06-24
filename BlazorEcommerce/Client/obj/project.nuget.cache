@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NhPVL4ZTLOW7tu4yZ4980eIcsUD2/qBN4qQ/MRDvv+qL9wU1lyv0Uqy4QP653gvHrMplE8uA0EhBjqfwhW0NTw==",
+  "dgSpecHash": "S3ZvRZDwXaVsnIiV4TYXcerZDyFM7xJFbUj3JRkMROsy2z4Qref1zFHpkr/HzAT3D3dJ6pwczgJr5FKzsJ+uQg==",
   "success": true,
   "projectFilePath": "C:\\github\\Blazor-Ecommerce\\BlazorEcommerce\\Client\\BlazorEcommerce.Client.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "C:\\Users\\brand\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.5\\microsoft.jsinterop.webassembly.7.0.5.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\brand\\.nuget\\packages\\mudblazor\\6.4.1\\mudblazor.6.4.1.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\stripe.net\\41.20.0\\stripe.net.41.20.0.nupkg.sha512",
     "C:\\Users\\brand\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
