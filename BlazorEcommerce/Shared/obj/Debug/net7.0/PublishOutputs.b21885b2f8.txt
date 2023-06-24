@@ -1,0 +1,3 @@
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\bin\Debug\net7.0\publish\BlazorEcommerce.Shared.dll
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\bin\Debug\net7.0\publish\BlazorEcommerce.Shared.deps.json
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\bin\Debug\net7.0\publish\BlazorEcommerce.Shared.pdb

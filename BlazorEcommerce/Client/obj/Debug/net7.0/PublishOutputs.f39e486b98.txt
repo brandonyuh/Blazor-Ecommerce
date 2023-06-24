@@ -1,0 +1,1 @@
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Client\bin\Debug\net7.0\publish\web.config
