@@ -1,0 +1,12 @@
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\bin\Release\net7.0\BlazorEcommerce.Shared.deps.json
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\bin\Release\net7.0\BlazorEcommerce.Shared.dll
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\bin\Release\net7.0\BlazorEcommerce.Shared.pdb
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\obj\Release\net7.0\BlazorEcommerce.Shared.csproj.AssemblyReference.cache
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\obj\Release\net7.0\BlazorEcommerce.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\obj\Release\net7.0\BlazorEcommerce.Shared.AssemblyInfoInputs.cache
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\obj\Release\net7.0\BlazorEcommerce.Shared.AssemblyInfo.cs
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\obj\Release\net7.0\BlazorEcommerce.Shared.csproj.CoreCompileInputs.cache
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\obj\Release\net7.0\BlazorEcommerce.Shared.dll
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\obj\Release\net7.0\refint\BlazorEcommerce.Shared.dll
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\obj\Release\net7.0\BlazorEcommerce.Shared.pdb
+C:\github\Blazor-Ecommerce\BlazorEcommerce\Shared\obj\Release\net7.0\ref\BlazorEcommerce.Shared.dll
